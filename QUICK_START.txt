@@ -1,0 +1,147 @@
+🚀 QUICK START - Deploy in 10 Minutes!
+========================================
+
+BEFORE YOU BEGIN
+----------------
+✓ You have FTP/cPanel access to broken.semprog.de
+✓ You have your App Store and Google Play URLs ready
+✓ You can create/edit images for favicon and social preview
+
+
+STEP 1: DOWNLOAD FILES (1 min)
+-------------------------------
+Download all files from the /landing folder
+
+
+STEP 2: CREATE IMAGES (5 min)
+------------------------------
+Create 3 images:
+
+favicon.png (32x32 or 64x64)
+→ Simple square icon of your logo
+→ Use Canva, Photoshop, or online favicon generator
+
+app-icon-180.png (180x180)  
+→ Clean logo for iOS home screen
+→ Export from your app's actual icon
+
+og-image.png (1200x630)
+→ Social media preview image
+→ Include logo + tagline "Heal Together"
+→ Use dark background with purple/blue gradient
+
+
+STEP 3: UPDATE APP LINKS (2 min)
+---------------------------------
+Open index.html and find/replace:
+
+Line 24:  YOUR_APP_ID
+→ Replace with your actual Apple App Store ID
+
+Line 208: https://apps.apple.com/app/broken
+→ Replace with your actual App Store URL
+
+Line 219: https://play.google.com/store/apps/details?id=com.broken.app
+→ Replace with your actual Google Play URL
+
+
+STEP 4: UPLOAD TO SERVER (2 min)
+---------------------------------
+Using FTP or cPanel:
+1. Connect to broken.semprog.de
+2. Go to /public_html/ folder
+3. Upload ALL files:
+   - *.html files
+   - styles.css
+   - script.js
+   - robots.txt
+   - sitemap.xml
+   - .htaccess
+   - favicon.png
+   - app-icon-180.png
+   - og-image.png
+
+
+STEP 5: SET UP SSL (Auto or 1 min)
+-----------------------------------
+Most hosts auto-enable SSL.
+If not:
+1. Go to cPanel → SSL/TLS
+2. Enable Let's Encrypt for broken.semprog.de
+3. Wait 2-5 minutes
+
+
+STEP 6: TEST WEBSITE (2 min)
+-----------------------------
+Visit: https://broken.semprog.de
+
+Check:
+✓ Homepage loads
+✓ Click "Privacy" - works
+✓ Click "Terms" - works  
+✓ Click "Support" - works
+✓ View on phone - responsive
+✓ Click email links - opens mail
+
+
+STEP 7: SET UP EMAILS (2 min)
+------------------------------
+In cPanel → Email Accounts:
+1. Create: support@broken.semprog.de
+2. Create: privacy@broken.semprog.de
+3. Forward both to your main email
+4. Set up auto-responder (optional)
+
+
+DONE! 🎉
+--------
+Your website is live at:
+https://broken.semprog.de
+
+Next steps:
+□ Submit to Apple App Store (use https://broken.semprog.de/support)
+□ Submit to Google Play (use https://broken.semprog.de/privacy)
+□ Share on social media
+□ Add to your app's About section
+
+
+TROUBLESHOOTING
+---------------
+Website doesn't load?
+→ Wait 5 minutes, clear cache, try again
+→ Check files are in /public_html/ not a subfolder
+
+CSS looks broken?
+→ Hard refresh: Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)
+→ Check styles.css uploaded correctly
+
+HTTPS not working?
+→ Enable SSL in cPanel
+→ Wait 24 hours for DNS propagation
+→ Contact hosting support
+
+Email not working?
+→ Check spelling of email addresses
+→ Verify accounts created in cPanel
+→ Test with different email client
+
+
+NEED HELP?
+----------
+Check: DEPLOYMENT.md for detailed guide
+Check: README.md for full documentation
+Email: support@broken.semprog.de
+
+
+TIME ESTIMATE
+-------------
+✓ Download files: 1 min
+✓ Create images: 5 min
+✓ Update links: 2 min
+✓ Upload files: 2 min
+✓ Total: ~10 minutes
+
+(Plus waiting for SSL if manual setup needed)
+
+
+YOU'RE READY! 🚀
