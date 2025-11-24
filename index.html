@@ -240,6 +240,68 @@
         </div>
     </section>
 
+    <!-- Email Signup Section -->
+    <section id="waitlist" class="email-signup">
+        <div class="container">
+            <div class="email-signup-content">
+                <div class="email-signup-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <h2 class="email-signup-title">Join the Healing Community</h2>
+                <p class="email-signup-subtitle">
+                    Be the first to know when we launch. Get early access, exclusive updates, 
+                    and special perks for our waitlist members.
+                </p>
+                
+                <form id="email-signup-form" class="email-form">
+                    <div class="email-input-wrapper">
+                        <input 
+                            type="email" 
+                            id="signup-email" 
+                            class="email-input" 
+                            placeholder="Enter your email address"
+                            required
+                            autocomplete="email"
+                        />
+                        <button type="submit" id="signup-submit" class="email-submit">
+                            Join Waitlist
+                        </button>
+                    </div>
+                    <div id="email-notification" class="email-notification" style="display: none;"></div>
+                </form>
+
+                <div class="email-benefits">
+                    <div class="benefit-item">
+                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Early Access</span>
+                    </div>
+                    <div class="benefit-item">
+                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Exclusive Updates</span>
+                    </div>
+                    <div class="benefit-item">
+                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Premium Perks</span>
+                    </div>
+                </div>
+
+                <p class="email-privacy">
+                    We respect your privacy. Unsubscribe anytime. 
+                    See our <a href="privacy.html">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
@@ -316,6 +378,13 @@
         </div>
     </footer>
 
+    <!-- Supabase JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- Supabase Configuration -->
+    <script src="supabase-config.js"></script>
+    
+    <!-- Main Script -->
     <script src="script.js"></script>
 </body>
 </html>

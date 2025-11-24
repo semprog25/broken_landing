@@ -2,14 +2,22 @@
 
 Complete landing page website for the Broken app - a social wellness application for breakup recovery.
 
-## 📁 Files Included
+## 📦 What's Included (14 Files):
 
-- **index.html** - Main landing page with features, testimonials, and download links
-- **privacy.html** - Comprehensive privacy policy (GDPR & CCPA compliant)
-- **terms.html** - Terms of Service with legal disclaimers
-- **support.html** - Support center with FAQ, crisis resources, and contact info
-- **styles.css** - Complete styling with dark theme and responsive design
-- **script.js** - Interactive features and smooth scrolling
+#### **Main Pages (5 HTML files):**
+1. ✅ **index.html** - Beautiful dark-themed landing page with:
+   - Hero section with app description
+   - Features grid (6 key features)
+   - How It Works section
+   - Testimonials
+   - **Email Waitlist Signup** (NEW! Stores to Supabase)
+   - Download buttons for App Store & Google Play
+   - Full navigation and footer
+2. ✅ **privacy.html** - Comprehensive privacy policy (GDPR & CCPA compliant)
+3. ✅ **terms.html** - Terms of Service with legal disclaimers
+4. ✅ **support.html** - Support center with FAQ, crisis resources, and contact info
+5. ✅ **styles.css** - Complete styling with dark theme and responsive design
+6. ✅ **script.js** - Interactive features and smooth scrolling
 
 ## 🚀 Quick Start
 
