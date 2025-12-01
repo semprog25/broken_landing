@@ -4,332 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Broken</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        .support-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 120px 20px 60px;
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ef4444',
+                        secondary: '#f43f5e',
+                    }
+                }
+            }
         }
-        .support-content h1 {
-            margin-bottom: 1rem;
-        }
-        .support-content .intro {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
-        }
-        .support-content h2 {
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-        }
-        .support-content h3 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .support-content p, .support-content ul {
-            color: var(--text-muted);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-        .support-content ul {
-            padding-left: 2rem;
-        }
-        .support-content li {
-            margin-bottom: 0.75rem;
-        }
-        .support-content strong {
-            color: var(--text-light);
-        }
-        .support-content a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-        .support-content a:hover {
-            text-decoration: underline;
-        }
-        .crisis-box {
-            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
-            padding: 2rem;
-            border-radius: 16px;
-            margin: 2rem 0;
-            border: 2px solid rgba(239, 68, 68, 0.5);
-        }
-        .crisis-box h3 {
-            color: white;
-            margin-top: 0;
-        }
-        .crisis-box p, .crisis-box ul, .crisis-box li {
-            color: white;
-        }
-        .contact-card {
-            background: var(--bg-card);
-            padding: 2rem;
-            border-radius: 16px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            margin-bottom: 1.5rem;
-        }
-        .contact-card h3 {
-            margin-top: 0;
-            color: var(--primary);
-        }
-        .faq-item {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            margin-bottom: 1rem;
-        }
-        .faq-item h4 {
-            color: var(--text-light);
-            margin-bottom: 0.75rem;
-        }
-    </style>
+    </script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <a href="index.html" style="text-decoration: none;">
-                        <span class="logo-text">Broken</span>
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                </div>
-            </div>
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-red-100">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <img src="https://aktlnldjuvrhrragkzbz.supabase.co/storage/v1/object/sign/brokenbucket/broken-final.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MzRlMGEwNS02Y2FkLTQ3MGEtYjQ1OC1kMGY3NmQ4NGYwMTAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJicm9rZW5idWNrZXQvYnJva2VuLWZpbmFsLnBuZyIsImlhdCI6MTc2NDUyOTgzMCwiZXhwIjozNDk5MDA5ODMwfQ.WM39bFo9XFxSD80LoH4oVSWnxewEbsZs6hNFFO8UDAE" 
+                     alt="Broken Logo" class="h-8 w-auto" />
+                <span class="font-bold text-xl text-slate-900 hidden sm:block">Broken</span>
+            </a>
+            <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-red-600 transition-colors">Back to Home</a>
         </div>
     </nav>
 
-    <!-- Support Content -->
-    <div class="support-content">
-        <h1>Support Center</h1>
-        <p class="intro">We're here to help. Find answers to common questions, crisis resources, and ways to contact our support team.</p>
-
-        <!-- Crisis Support -->
-        <div class="crisis-box" id="crisis">
-            <h3>🚨 In Crisis? Get Immediate Help</h3>
-            <p><strong>If you are in immediate danger or having thoughts of self-harm, please reach out for help now:</strong></p>
-            <ul>
-                <li><strong>Emergency Services:</strong> Call 911 (US) or your local emergency number</li>
-                <li><strong>988 Suicide & Crisis Lifeline (US):</strong> Call or text 988</li>
-                <li><strong>Crisis Text Line (US):</strong> Text HOME to 741741</li>
-                <li><strong>International Association for Suicide Prevention:</strong> <a href="https://www.iasp.info/resources/Crisis_Centres/" style="color: white; text-decoration: underline;">Find your country's hotline</a></li>
-                <li><strong>EU Standard Emergency:</strong> 112</li>
-                <li><strong>UK Samaritans:</strong> 116 123</li>
-                <li><strong>Germany Telefonseelsorge:</strong> 0800 111 0 111 or 0800 111 0 222</li>
-            </ul>
-            <p><strong>Remember: Broken is a peer support app, not a crisis service. Always contact professional help in emergencies.</strong></p>
+    <!-- Content -->
+    <main class="container mx-auto px-6 py-32 max-w-xl">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-slate-900">How can we help?</h1>
+            <p class="text-slate-600">We're here to help you on your healing journey. Send us a message and we'll get back to you as soon as possible.</p>
         </div>
 
-        <h2>Contact Us</h2>
+        <form id="support-form" class="space-y-6 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+            <div>
+                <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Name</label>
+                <input type="text" id="name" name="name" required 
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 outline-none transition-all">
+            </div>
 
-        <div class="contact-card">
-            <h3>General Support</h3>
-            <p>For questions, feedback, or assistance with the app:</p>
-            <p><strong>Email:</strong> <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a></p>
-            <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+            <div>
+                <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" required 
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 outline-none transition-all">
+            </div>
+
+            <div>
+                <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" required 
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-red-500 focus:ring-2 focus:ring-red-100 outline-none transition-all"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn"
+                class="w-full py-4 bg-gradient-to-r from-red-600 to-rose-600 text-white font-medium rounded-xl shadow-lg shadow-red-500/20 hover:shadow-red-500/30 hover:scale-[1.02] transition-all">
+                Send Message
+            </button>
+        </form>
+
+        <div id="success-message" class="hidden mt-6 p-6 bg-green-50 text-green-800 rounded-2xl border border-green-200 text-center">
+            <div class="flex justify-center mb-2">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <h3 class="font-bold text-lg mb-1">Message Sent!</h3>
+            <p>Thank you for reaching out. We'll get back to you shortly.</p>
         </div>
-
-        <div class="contact-card">
-            <h3>Privacy Inquiries</h3>
-            <p>For questions about your data, privacy, or to request account deletion:</p>
-            <p><strong>Email:</strong> <a href="mailto:privacy@broken.semprog.de">privacy@broken.semprog.de</a></p>
-            <p><strong>Response Time:</strong> Privacy requests are prioritized and handled within 72 hours</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>Report Abuse or Violations</h3>
-            <p>To report content or users that violate our Terms of Service:</p>
-            <ul>
-                <li>Use the in-app report feature (fastest method)</li>
-                <li>Email: <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a> with subject "Report Abuse"</li>
-            </ul>
-        </div>
-
-        <h2 id="faq">Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-            <h4>How do I create an account?</h4>
-            <p>Download the Broken app from the App Store or Google Play, open it, and follow the sign-up process. You'll need an email address to create an account.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>Is Broken really free?</h4>
-            <p>Yes! Broken is free to download and use. We offer premium subscription tiers with additional features, but core functionality is always free.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>How do I post anonymously?</h4>
-            <p>When creating a post, toggle the "Post Anonymously" option. Your username and profile information will be hidden from other users.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>What are points and XP?</h4>
-            <p>Points and XP (experience points) are earned by completing daily challenges, engaging with the community, and tracking your mood. They help you level up and unlock achievements. They have no monetary value and are for motivation only.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>How do subscriptions work?</h4>
-            <p>Premium subscriptions are purchased through the App Store or Google Play. They automatically renew unless canceled. You can manage your subscription in your app store account settings.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>How do I cancel my subscription?</h4>
-            <p><strong>iOS:</strong> Settings → Your Name → Subscriptions → Broken → Cancel Subscription</p>
-            <p><strong>Android:</strong> Google Play Store → Menu → Subscriptions → Broken → Cancel Subscription</p>
-            <p>Your subscription will remain active until the end of the current billing period.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>Can I get a refund?</h4>
-            <p>Refunds are handled by Apple or Google according to their policies. Contact Apple Support or Google Play Support for refund requests. We cannot process refunds directly.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>How do I delete my account?</h4>
-            <p>In the app: Profile → Settings → Account → Delete Account. Or email <a href="mailto:privacy@broken.semprog.de">privacy@broken.semprog.de</a> with your request. Account deletion is permanent and cannot be undone.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>Is my data private?</h4>
-            <p>Yes. We take privacy seriously and use industry-standard security measures. Please read our <a href="privacy.html">Privacy Policy</a> for full details on how we handle your data.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>Can I report inappropriate content or users?</h4>
-            <p>Yes! Use the report button on any post or profile. Our moderation team reviews all reports. You can also block users directly in the app.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>What languages does Broken support?</h4>
-            <p>Broken supports multiple languages including English, German, Spanish, French, and more. You can change your language in the app settings.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>Is Broken a replacement for therapy?</h4>
-            <p><strong>No.</strong> Broken is a peer support platform, not a mental health service. We are not a substitute for professional therapy, counseling, or medical treatment. If you need professional help, please contact a licensed mental health provider.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>The app is crashing or not working. What should I do?</h4>
-            <p>Try these steps:</p>
-            <ul>
-                <li>Force close and restart the app</li>
-                <li>Check for app updates in your app store</li>
-                <li>Restart your device</li>
-                <li>Ensure you have a stable internet connection</li>
-                <li>If problems persist, email <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a> with details about the issue</li>
-            </ul>
-        </div>
-
-        <div class="faq-item">
-            <h4>I forgot my password. How do I reset it?</h4>
-            <p>On the login screen, tap "Forgot Password?" and enter your email. You'll receive a password reset link.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>Can I change my username?</h4>
-            <p>Yes! Go to Profile → Settings → Edit Profile to change your username.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>How do Support Circles work?</h4>
-            <p>Support Circles are private groups for deeper connection. You need to reach level 10 or have a premium subscription to create a circle. You can join circles at any time if invited or if they're public.</p>
-        </div>
-
-        <div class="faq-item">
-            <h4>What's the daily XP limit?</h4>
-            <p>Free users have a daily XP limit to encourage balanced usage. Premium subscribers have unlimited daily XP.</p>
-        </div>
-
-        <h2>Data Requests</h2>
-
-        <h3>Request Your Data</h3>
-        <p>Under GDPR and CCPA, you have the right to request a copy of your data. Email <a href="mailto:privacy@broken.semprog.de">privacy@broken.semprog.de</a> with subject "Data Request" to receive your data in a portable format.</p>
-
-        <h3>Request Account Deletion</h3>
-        <p>You can delete your account in-app or by emailing <a href="mailto:privacy@broken.semprog.de">privacy@broken.semprog.de</a> with subject "Delete Account". We will delete your data within 30 days, except where required by law to retain it.</p>
-
-        <h2>Report Security Issues</h2>
-
-        <p>If you discover a security vulnerability, please report it responsibly:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a> with subject "Security Issue"</p>
-        <p>Please do not publicly disclose security issues before we have had a chance to address them.</p>
-
-        <h2>Feedback and Feature Requests</h2>
-
-        <p>We love hearing from our community! Share your ideas, suggestions, and feedback:</p>
-        <ul>
-            <li>Use the in-app feedback feature (Profile → Settings → Send Feedback)</li>
-            <li>Email: <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a> with subject "Feedback"</li>
-        </ul>
-
-        <h2>Media and Press Inquiries</h2>
-
-        <p>For media inquiries, partnership opportunities, or press information:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a> with subject "Media Inquiry"</p>
-
-        <h2>Community Guidelines</h2>
-
-        <p>Please review our community guidelines to ensure a safe and supportive environment for everyone:</p>
-        <ul>
-            <li>Be respectful and kind</li>
-            <li>No harassment, bullying, or hate speech</li>
-            <li>No spam or promotional content</li>
-            <li>Protect privacy - don't share personal information</li>
-            <li>No content promoting self-harm or violence</li>
-            <li>Report violations using the in-app report feature</li>
-        </ul>
-
-        <h2>Additional Resources</h2>
-
-        <h3>Mental Health Resources</h3>
-        <ul>
-            <li><strong>SAMHSA National Helpline:</strong> 1-800-662-4357 (US, free, confidential, 24/7)</li>
-            <li><strong>NAMI (National Alliance on Mental Illness):</strong> 1-800-950-6264</li>
-            <li><strong>Psychology Today Therapist Finder:</strong> <a href="https://www.psychologytoday.com">psychologytoday.com</a></li>
-            <li><strong>BetterHelp (Online Therapy):</strong> <a href="https://www.betterhelp.com">betterhelp.com</a></li>
-        </ul>
-
-        <h3>Domestic Violence Resources</h3>
-        <ul>
-            <li><strong>National Domestic Violence Hotline:</strong> 1-800-799-7233 (US)</li>
-            <li><strong>Text START to 88788</strong></li>
-        </ul>
-
-        <h3>LGBTQ+ Support</h3>
-        <ul>
-            <li><strong>The Trevor Project:</strong> 1-866-488-7386 (24/7 for LGBTQ+ youth)</li>
-            <li><strong>Text START to 678-678</strong></li>
-        </ul>
-
-        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(139, 92, 246, 0.2);">
-            <p style="text-align: center; color: var(--text-muted);">
-                Still have questions? Email us at <a href="mailto:support@broken.semprog.de">support@broken.semprog.de</a>
-            </p>
-            <p style="text-align: center; margin-top: 1rem;">
-                <a href="index.html">← Back to Home</a> | 
-                <a href="privacy.html">Privacy Policy</a> | 
-                <a href="terms.html">Terms of Service</a>
-            </p>
-        </div>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2025 Broken. All rights reserved.</p>
-                <p class="footer-disclaimer">Broken is not a substitute for professional mental health care. If you're experiencing a mental health crisis, please contact emergency services or a crisis hotline immediately.</p>
-            </div>
+    <footer class="py-12 border-t border-slate-100 bg-white mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm">© 2025 Broken App. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('support-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Mock submission
+            const btn = document.getElementById('submit-btn');
+            const originalText = btn.innerText;
+            
+            btn.disabled = true;
+            btn.innerText = 'Sending...';
+
+            setTimeout(() => {
+                document.getElementById('support-form').classList.add('hidden');
+                document.getElementById('success-message').classList.remove('hidden');
+            }, 1500);
+        });
+    </script>
 </body>
 </html>
