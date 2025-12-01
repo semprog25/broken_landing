@@ -26,7 +26,7 @@
             <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <img src="https://aktlnldjuvrhrragkzbz.supabase.co/storage/v1/object/sign/brokenbucket/broken-final.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MzRlMGEwNS02Y2FkLTQ3MGEtYjQ1OC1kMGY3NmQ4NGYwMTAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJicm9rZW5idWNrZXQvYnJva2VuLWZpbmFsLnBuZyIsImlhdCI6MTc2NDUyOTgzMCwiZXhwIjozNDk5MDA5ODMwfQ.WM39bFo9XFxSD80LoH4oVSWnxewEbsZs6hNFFO8UDAE" 
                      alt="Broken Logo" class="h-8 w-auto" />
-                <span class="font-bold text-xl text-slate-900 hidden sm:block"></span>
+                <!-- <span class="font-bold text-xl text-slate-900 hidden sm:block">Broken</span> -->
             </a>
             <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-red-600 transition-colors">Back to Home</a>
         </div>
@@ -71,11 +71,66 @@
             <h3 class="font-bold text-lg mb-1">Message Sent!</h3>
             <p>Thank you for reaching out. We'll get back to you shortly.</p>
         </div>
+
+        <!-- FAQ Section -->
+        <div class="mt-20 border-t border-slate-100 pt-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Common Questions</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-medium text-slate-800 bg-slate-50 hover:bg-slate-100 transition-colors flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>How do I reset my password?</span>
+                        <svg class="w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white text-slate-600 leading-relaxed border-t border-slate-100">
+                        If you've forgotten your password, go to the login screen in the app and tap "Forgot Password". Enter your email address, and we'll send you a link to reset it.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-medium text-slate-800 bg-slate-50 hover:bg-slate-100 transition-colors flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Is my journal private?</span>
+                        <svg class="w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white text-slate-600 leading-relaxed border-t border-slate-100">
+                        Yes, absolutely. Your journal entries are encrypted and private to you. We do not read, share, or sell your personal journal data.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-medium text-slate-800 bg-slate-50 hover:bg-slate-100 transition-colors flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>How do I delete my account?</span>
+                        <svg class="w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-white text-slate-600 leading-relaxed border-t border-slate-100">
+                        You can delete your account by going to Profile > Settings > Delete Account. Alternatively, you can request deletion via the contact form on this page.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-slate-600 mb-4">Still need help?</p>
+                <a href="mailto:hello@broken.app" class="inline-flex items-center gap-2 text-red-600 font-medium hover:text-red-700">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    Email us directly
+                </a>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer class="py-12 border-t border-slate-100 bg-white mt-12">
         <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-500 mb-8">
+                <a href="privacy.html" class="hover:text-red-600 transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-red-600 transition-colors">Terms of Service</a>
+                <a href="eula.html" class="hover:text-red-600 transition-colors">EULA</a>
+                <a href="data_deletion.html" class="hover:text-red-600 transition-colors">Data Deletion</a>
+                <a href="support.html" class="hover:text-red-600 transition-colors">Contact Support</a>
+            </div>
             <p class="text-slate-400 text-sm">© 2025 Broken App. All rights reserved.</p>
         </div>
     </footer>
